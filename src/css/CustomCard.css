@@ -1,0 +1,17 @@
+
+.card {
+    min-height: 200px;
+}
+
+.star{
+    display: flex;
+}
+
+.row-left{
+    flex:25%;
+}
+
+.row-right{
+    flex: 75%;
+    justify-content: end;
+}

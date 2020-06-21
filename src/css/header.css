@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #04173F;
+    --main-bg-color:white;
+    --text-color:black;
+    --icon-color:#3D3D3D;
+    --cta-color:#ED5142;
+    --stroke-color:#C4C4C4;
+    --rating-star-color:#FDCC0D;
+  }
+
+  .header-top-left{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 16px;
+      padding-right: 72px;
+      padding-left: 72px; 
+  }
+
+  .header-top-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 16px;
+    padding-right: 72px;
+}
+
+  .nav-text {
+    vertical-align: middle;
+}
+
+.category-box{
+    width: 583px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    flex-direction: row;
+    align-content: center;
+}
+
+
+
+.no-border {
+    border: 0;
+}
+  
+.no-outline {
+    outline: none;
+    border: 0px;
+  }
+  
+ #collasible-nav-dropdown{
+    color: white;
+    font-size: 14px;
+      
+  }
+
+  .logo-row{
+    /* margin: 24px 72px 24px 72px ; */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+  /* search Box */
+  #input-group-dropdown-1{
+    background-color: transparent;
+    border:none;
+    color: black;
+}
+
+.input-container{
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 5px;
+  align-items: center;
+}
+
+.input-box{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  /* padding: 5px; */
+}
+
+.card-left{
+  padding-left: 30px;
+ 
+}
+.button-header {
+  background-color:  #ED5142;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 8px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100px;
+  height: 24px;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+Nav {
+  display:flex;
+  justify-content:center;
+  }
+
+  Nav.Link {
+    display:flex;
+    justify-content:space-between;
+    }
+
+
+
+@media (min-width: 768px) { 
+    .container-fluid.header-top-bar{
+        background-color: var(--primary-color);
+        padding: 1rem;
+    }
+
+    .header-bar{
+      display: inline;
+      display: flex;
+      flex-direction: row;
+    }
+    .header-top-left p, .header-top-right p{
+        color: var(--main-bg-color);
+        display: flex;
+        flex-direction: row;
+    }
+    .categories{
+        padding:1rem 3rem;
+    }
+    .nav-link{
+        color: var(--text-color);
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+}

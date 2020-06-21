@@ -1,0 +1,98 @@
+
+/* Email Subscribe form Component */
+.subscribe-component{
+    background-color: #F2F2F2;
+    padding: 2rem;
+}
+
+.subscribe-title{
+    color:#04173F;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 36px;
+    margin-bottom: 48px;
+    justify-content: center;
+  }
+
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color:  #F2F2F2;
+    border: 1px solid rgb(226, 226, 226);
+    width: 60%;
+    margin-right: 32px;
+    border-radius: 3px;
+  }
+  .form-inline button {
+    background-color:  #ED5142;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 48px;
+  }
+
+
+
+/* products card component */
+.container{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+} 
+
+.each-container{
+    width: 250px;
+    height: 400px;
+}
+.products-component{
+    padding: 10px 25px;
+}
+
+
+/* Picture Banner */
+.banner{
+    padding: 40px 154px;
+    height: 356px;
+}
+
+.banner-left{
+    background-image: url('../assets/images/banner-left.jpg');
+    background-size: 100% 100%;
+}
+
+.banner-right{
+    background-image: url('../assets/images/banner-right.jpg');
+    background-size: 100% 100%;
+}
+
+
+
+/* carousel banner */
+@media (min-width: 768px) { 
+    .img-carousel {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.img-fill{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
