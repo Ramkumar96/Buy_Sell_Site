@@ -18,6 +18,8 @@ import heartOutlined from '@iconify/icons-ant-design/heart-outlined';
 import shoppingCartOutlined from '@iconify/icons-ant-design/shopping-cart-outlined';
 import folderOpenOutlined from '@iconify/icons-ant-design/folder-open-outlined';
 import bxSearch from '@iconify/icons-bx/bx-search';
+import bxSupport from '@iconify/icons-bx/bx-support';
+import faqIcon from '@iconify/icons-wpf/faq';
 
 
 const Header = () => (
@@ -25,23 +27,35 @@ const Header = () => (
         <div className="container-fluid header-top-bar">
             <div className="nav-bar header-bar">
                 <div className="col-md-6 header-top-left" activeKey="/home">
-                    <i class="fa fa-phone" style={{ fontSize: '20px', color: '#ffffff', paddingRight: '8px' }}></i>
-                    <p >+1 609-666-4476</p>
-                    <i class="fa fa-envelope" style={{ fontSize: '20px', color: '#ffffff', paddingRight: '8px' }}></i>
-                    <p>buyAndsell@gmail.com</p>
+                    <Icon icon={bxSupport} style={{ color: '#ffffff', fontSize: '15px' }} />
+                    <span className="headerTopText">
+                        <p>Help & Support</p>
+                    </span>
+
+                    <Icon icon={faqIcon} style={{ color: '#ffffff', fontSize: '14px' }} />
+                    <span className="headerTopText">
+                        <p>FAQ</p>
+                    </span>
                 </div>
-                <div className="col-md-6 header-top-right">
-                    <i class="fa fa-compass" style={{ fontSize: '20px', color: '#ffffff', paddingRight: '8px' }}></i>
-                    <p>Track my order</p>
-                    <span> <i class="fa fa-user-alt" style={{ fontSize: '20px', color: '#ffffff', paddingRight: '8px' }}></i></span>
-                    <NavDropdown title="My Account" id="collasible-nav-dropdown" className="nav-dropdown">
+                <div className="col-md-6 header-top-left d-flex justify-content-end" activeKey="/home">
+                    <Icon icon={compassOutlined} style={{ color: '#ffffff', fontSize: '17px' }} />
+                    <span className="headerTopText">
+                        <p>Track my order</p>
+                    </span>
+
+                    <Icon icon={bxsUser} style={{ color: '#ffffff', fontSize: '18px' }} />
+                    {/* <span className="headerTopText"> */}
+                    <NavDropdown title="My Account" id="collasible-nav-dropdown" className="nav-dropdown dropdown-text">
                         <NavDropdown.Item href="#action/3.1">Sign up</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Sign in</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">View Profile</NavDropdown.Item>
                     </NavDropdown>
+                    {/* <p>My Account</p> */}
+                    {/* </span> */}
                 </div>
+                
             </div>
-        </div >
+        </div>
 
 
 
@@ -72,8 +86,8 @@ const Header = () => (
                     </InputGroup>
                 </form>
             </div>
-           
-            <div className="col-md-4 card-left">
+
+            <div className="col-md-4 card-left d-flex justify-content-end">
                 <a href="">
                     <Icon icon={shoppingCartOutlined} style={{ fontSize: '30px' }} />
                 </a>
