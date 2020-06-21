@@ -67,7 +67,7 @@ const Header = () => (
             <div className="col-md-6 input-container">
                 <form>
                     <InputGroup className="mb-3 justify-content-center input-box">
-                        <Icon icon={folderOpenOutlined} style={{ color: '#3d3d3d', fontSize: '30px' }} />
+                        <Icon icon={folderOpenOutlined} style={{ color: '#3d3d3d', fontSize: '30px', marginTop: '2px' }} />
                         <DropdownButton
                             as={InputGroup.Prepend}
                             // variant="outline-secondary"
@@ -82,19 +82,19 @@ const Header = () => (
                             <Dropdown.Item href="#">Separated link</Dropdown.Item>
                         </DropdownButton>
                         <FormControl aria-describedby="basic-addon1" placeholder="Search your items here..." style={{ border: 'none' }} />
-                        <Icon icon={bxSearch} style={{ color: '#3d3d3d', fontSize: '30px' }} />
+                        <Icon icon={bxSearch} style={{ color: '#3d3d3d', fontSize: '28px',marginTop: '6px', marginLeft: '90px' }} />
                     </InputGroup>
                 </form>
             </div>
 
-            <div className="col-md-4 card-left d-flex justify-content-end">
+            <div className="col-md-4 icons-right d-flex justify-content-end">
                 <a href="">
-                    <Icon icon={shoppingCartOutlined} style={{ fontSize: '30px' }} />
+                    <Icon icon={shoppingCartOutlined} className="cart-icon" style={{ color: '#3d3d3d', fontSize: '30px', marginRight: '1em', marginTop: '0.5em'}} />
                 </a>
                 <a href="">
-                    <Icon icon={heartOutlined} style={{ color: '#3d3d3d', fontSize: '31px' }} />
+                    <Icon icon={heartOutlined} style={{ color: '#3d3d3d', fontSize: '31px', marginRight: '1em', marginTop: '0.5em' }} />
                 </a>
-                <button className="button-header">SUBSCRIBE</button>
+                <button className="button-header">Start Selling</button>
             </div>
         </div>
 
