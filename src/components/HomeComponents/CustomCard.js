@@ -3,14 +3,14 @@ import { Icon, InlineIcon } from '@iconify/react';
 import heartOutlined from '@iconify/icons-ant-design/heart-outlined';
 import starFilled from '@iconify/icons-ant-design/star-filled';
 import Card from 'react-bootstrap/Card';
-import '../css/CustomCard.css';
+import '../../css/CustomCard.css';
 
 class CustomCard extends Component {
     render() {
         return (
             <div>
                 <Card className='card' >
-                    <Card.Img variant="top" src={require('../assets/images/dress-03.jpg')}  style={{ height:'200px'}} />
+                    <Card.Img variant="top" src={require('../../assets/images/dress-03.jpg')}  style={{ height:'200px'}} />
                     <Card.Body style={{height:'100px'}} >
                         <Card.Text>
                             <div className="d-flex flex-row">
@@ -30,6 +30,7 @@ class CustomCard extends Component {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+
             </div>
         )
     }
