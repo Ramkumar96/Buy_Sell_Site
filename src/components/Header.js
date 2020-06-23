@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/header.css';
+import '../css/header.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import InputGroup from 'react-bootstrap/InputGroup';

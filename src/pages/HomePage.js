@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
-import Header from '../components/HomeComponents/Header'
+import React, { Component } from 'react';
+
+import Header from '../components/Header';
 import Home from '../components/HomeComponents/Home'
-import Footer from '../components/HomeComponents/Footer'
+import Footer from '../components/Footer'
 
 export default class HomePage extends Component {
     render() {

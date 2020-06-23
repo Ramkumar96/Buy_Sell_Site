@@ -141,6 +141,9 @@ Nav {
     }
     .category-link{
       color: var(--icon-color) !important;
+      font-weight: bold;
+      padding-right: 5rem;
+      /* padding-left: 2rem; */
   }
     .categories{
         padding:1rem 3rem;
