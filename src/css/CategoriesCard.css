@@ -1,0 +1,10 @@
+.card{
+    width: 180px;
+    height: 200px;
+    border: none;
+}
+
+.cardtopic{
+     text-align: center;
+     font-size: 16px;
+}

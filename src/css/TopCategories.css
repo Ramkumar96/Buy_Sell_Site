@@ -1,0 +1,68 @@
+.CategoriesCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cardContainer{
+    padding: 10px;
+}
+
+.filterCategories{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+    
+.topcategories{
+    height: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.topcategoriesTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.topcategoriesCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.newArrivals{
+    height: 400px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.newArrivalsTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.newArrivalsCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.brands{
+    height: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+}
+
+.brandsTitle{  
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brandscard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}

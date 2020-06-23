@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/home.css';
+import '../../css/home.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 import { Icon, InlineIcon } from '@iconify/react';
@@ -18,7 +18,7 @@ const Home = () => (
         <Carousel.Item>
           <img
             className="img-fill"
-            src={require('../assets/images/c1.jpg')}
+            src={require('../../assets/images/c1.jpg')}
             alt="First slide"
           />
           <Carousel.Caption>
@@ -29,7 +29,7 @@ const Home = () => (
         <Carousel.Item>
           <img
             className="img-fill"
-            src={require('../assets/images/c2.jpg')}
+            src={require('../../assets/images/c2.jpg')}
             alt="Third slide"
           />
           <Carousel.Caption>
@@ -40,7 +40,7 @@ const Home = () => (
         <Carousel.Item>
           <img
             className="img-fill"
-            src={require('../assets/images/c3.jpg')}
+            src={require('../../assets/images/c3.jpg')}
             alt="Third slide"
           />
           <Carousel.Caption>
@@ -58,17 +58,10 @@ const Home = () => (
 
     {/* Products card container */}
     <div className="container">
-      <div className="row products-component">
-        <div className="col-md-4">
+      <div className="row products-component">   
           <CustomCard />
-        </div>
-
-        <div className="col-md-4">
           <CustomCard />
-        </div>
-        <div className="col-md-4">
           <CustomCard />
-        </div>
       </div>
 
       <div className="row products-component">

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/footer.css';
+import '../../css/footer.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Icon, InlineIcon } from '@iconify/react';
 import facebookWithCircle from '@iconify/icons-entypo-social/facebook-with-circle';
@@ -52,9 +52,9 @@ const Footer = () => (
                     Copyright Ⓒ buy&SellPortal All rights reserved
                 </div>
                 <div class="justify-content-end">
-                    <img src={require('../assets/images/visa.png')} className="payment-cards" />
-                    <img src={require('../assets/images/mastercard.png')} className="payment-cards" />
-                    <img src={require('../assets/images/paypal.png')} className="payment-cards" />
+                    <img src={require('../../assets/images/visa.png')} className="payment-cards" />
+                    <img src={require('../../assets/images/mastercard.png')} className="payment-cards" />
+                    <img src={require('../../assets/images/paypal.png')} className="payment-cards" />
                 </div>
             </div>
 
