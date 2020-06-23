@@ -131,7 +131,7 @@ Nav {
       margin-right: 1em;
     }
     .dropdown-text{
-
+      color: white !important;
     }
     .cart-icon{
       color: '#3d3d3d';
@@ -139,7 +139,7 @@ Nav {
       margin-right: '1em';
       /* margin-top: '1em'; */
     }
-    .nav-link{
+    .category-link{
       color: var(--icon-color) !important;
   }
     .categories{
@@ -156,7 +156,16 @@ Nav {
       height: 60px;
       display: flex;
       align-items: center;
+      width: 5em !important;
       
+    }
+    .vl {
+      border-left: 2px solid rgb(167, 167, 167);
+      height: 40px;
+      position: absolute;
+      left: 50%;
+      margin-left: -3px;
+      top: 0;
     }
     
 }
