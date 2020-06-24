@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/header.css';
+import '../css/header.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -45,7 +45,7 @@ const Header = () => (
 
                     <Icon icon={bxsUser} style={{ color: '#ffffff', fontSize: '18px' }} />
                     {/* <span className="headerTopText"> */}
-                    <NavDropdown title="My Account" id="collasible-nav-dropdown" className="nav-dropdown dropdown-text">
+                    <NavDropdown title="My Account" id="collasible-nav-dropdown" className="nav-dropdown dropdown-text" style={{ color: 'white' }}>
                         <NavDropdown.Item href="#action/3.1">Sign up</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.2">Sign in</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">View Profile</NavDropdown.Item>
@@ -53,7 +53,7 @@ const Header = () => (
                     {/* <p>My Account</p> */}
                     {/* </span> */}
                 </div>
-                
+
             </div>
         </div>
 
@@ -81,15 +81,19 @@ const Header = () => (
                             <Dropdown.Divider />
                             <Dropdown.Item href="#">Separated link</Dropdown.Item>
                         </DropdownButton>
+                        <div class="vl"></div>
                         <FormControl aria-describedby="basic-addon1" placeholder="Search your items here..." style={{ border: 'none' }} />
-                        <Icon icon={bxSearch} style={{ color: '#3d3d3d', fontSize: '28px',marginTop: '6px', marginLeft: '90px' }} />
+                        <span className="d-flex justify-content-end">
+                            <Icon icon={bxSearch} className="d-flex justify-content-end" style={{ color: '#3d3d3d', fontSize: '25px', marginTop: '6px', }} />
+                        </span>
+
                     </InputGroup>
                 </form>
             </div>
 
             <div className="col-md-4 icons-right d-flex justify-content-end">
                 <a href="">
-                    <Icon icon={shoppingCartOutlined} className="cart-icon" style={{ color: '#3d3d3d', fontSize: '30px', marginRight: '1em', marginTop: '0.5em'}} />
+                    <Icon icon={shoppingCartOutlined} className="cart-icon" style={{ color: '#3d3d3d', fontSize: '30px', marginRight: '1em', marginTop: '0.5em' }} />
                 </a>
                 <a href="">
                     <Icon icon={heartOutlined} style={{ color: '#3d3d3d', fontSize: '31px', marginRight: '1em', marginTop: '0.5em' }} />
@@ -102,14 +106,14 @@ const Header = () => (
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="links" >
                 <Nav>
-                    <Nav.Link href="/home" className="nav-link">WOMEN'S</Nav.Link>
-                    <Nav.Link eventKey="link-1" className="nav-link">MEN'S</Nav.Link>
-                    <Nav.Link eventKey="link-2" className="nav-link">KID'S</Nav.Link>
-                    <Nav.Link href="/home" className="nav-link">SHOES</Nav.Link>
-                    <Nav.Link eventKey="link-1" className="nav-link">CLOTHING</Nav.Link>
-                    <Nav.Link eventKey="link-2" className="nav-link">ACCESSORIES</Nav.Link>
-                    <Nav.Link eventKey="link-1" className="nav-link">BAGS</Nav.Link>
-                    <Nav.Link eventKey="link-1" className="nav-link">ELECTRONICS</Nav.Link>
+                    <Nav.Link href="/home" className="category-link">WOMEN'S</Nav.Link>
+                    <Nav.Link eventKey="link-1" className="category-link">MEN'S</Nav.Link>
+                    <Nav.Link eventKey="link-2" className="category-link">KID'S</Nav.Link>
+                    <Nav.Link href="/home" className="category-link">SHOES</Nav.Link>
+                    <Nav.Link eventKey="link-1" className="category-link">CLOTHING</Nav.Link>
+                    <Nav.Link eventKey="link-2" className="category-link">ACCESSORIES</Nav.Link>
+                    <Nav.Link eventKey="link-1" className="category-link">BAGS</Nav.Link>
+                    <Nav.Link eventKey="link-1" className="category-link">ELECTRONICS</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

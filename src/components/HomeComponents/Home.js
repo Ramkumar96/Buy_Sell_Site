@@ -57,13 +57,13 @@ const Home = () => (
 
 
     {/* Products card container */}
-    <div className="container">
+    {/* <div className="container">
       <div className="row products-component">   
           <CustomCard />
           <CustomCard />
           <CustomCard />
-      </div>
-
+      </div> */}
+{/* 
       <div className="row products-component">
         <div className="col-md-4">
           <CustomCard />
@@ -75,19 +75,9 @@ const Home = () => (
           <CustomCard />
         </div>
       </div>
-    </div>
+    </div> */}
 
-    {/* Picture Banner  */}
-    <div className="row banner ">
-      <div className="col-md-6 banner-left">
-        <div className="banner-text">#april store</div>
-        <div className="banner-text">Up to 50% off final sale items</div>
-        <div className="banner-text"></div>
-      </div>
-      <div className="col-md-6 banner-right">
-
-      </div>
-    </div>
+    
 
     {/* subscribe form component */}
     <div className="container-fluid subscribe-component">

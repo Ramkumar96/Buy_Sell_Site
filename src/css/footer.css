@@ -1,8 +1,12 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap'); */
+:root{
+    font-family: 'Crimson Text', serif;
+}
 .footerComponent{
     background-color: var(--primary-color);
     flex-direction: row;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 .footer-content{
     color: var(--main-bg-color);
@@ -14,11 +18,45 @@
 }
 .copyright{
     color: var(--main-bg-color);
-    font-size: 12px;
+    font-size: 14px;
     padding-right: 700px;
 }
 .payment-cards{
     padding: 5px 5px;
     width: 48px;
 
+}
+.horizontalLine {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.copyright{
+    color:white;
+    overflow: hidden;
+}
+.bottomright{
+    padding: 0.1rem;
+}
+
+.bottomleft{
+    margin-top: 1rem;
+}
+.icons{
+    color: white;
+    height: 1.5em;
+    width: 1.5em;
+    /* margin-top: 5px; */
+    margin-right: 1em;   
+}
+.social-icons{
+    margin-top: 1em;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    .bottomleft{
+        margin: 0rem;
+        padding: 8px;
+    }
 }
