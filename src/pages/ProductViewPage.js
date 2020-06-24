@@ -5,6 +5,10 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import CustomCard from '../components/HomeComponents/CustomCard';
 
+import { Icon, InlineIcon } from '@iconify/react';
+import heartOutlined from '@iconify/icons-ant-design/heart-outlined';
+import starFilled from '@iconify/icons-ant-design/star-filled';
+
 import Carousel from 'react-bootstrap/Carousel';
 
 const ProductViewPage = () => {
@@ -29,10 +33,6 @@ const ProductViewPage = () => {
                                         src={require('../assets/images/c1.jpg')}
                                         alt="First slide"
                                     />
-                                    <Carousel.Caption>
-                                        <h3>First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </Carousel.Caption>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
@@ -40,10 +40,6 @@ const ProductViewPage = () => {
                                         src={require('../assets/images/c2.jpg')}
                                         alt="Third slide"
                                     />
-                                    <Carousel.Caption>
-                                        <h3>Second slide label</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </Carousel.Caption>
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
@@ -51,15 +47,60 @@ const ProductViewPage = () => {
                                         src={require('../assets/images/c2.jpg')}
                                         alt="Third slide"
                                     />
-                                    <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                    </Carousel.Caption>
                                 </Carousel.Item>
                             </Carousel>
                         </div>
+
                         <div className="col-25">
-                            <p>raam</p>
+                            <div>
+                                <p className="product-text"> Bobeau Short sleeve Wrap dress</p>
+                            </div>
+                            <div>
+                            <p className="row-right">
+                                    <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
+                                    <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
+                                    <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
+                                    <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
+                                    <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
+                                </p>
+                            </div>
+                            <div >
+                                <p className="product-text red-text"> $14.99 - $19.99 </p> <p className="product-text"> & Free shipping</p>
+                            </div>
+                            <div>
+                                <p className="product-text">SIZE</p>
+                            </div>
+                            <div>
+                            <DropdownButton
+                            as={InputGroup.Prepend}
+                            // variant="outline-secondary"
+                            title="Size "
+                            id="input-group-dropdown-1"
+                            className="drop"
+                        >
+                            <Dropdown.Item href="#">Lorem </Dropdown.Item>
+                            <Dropdown.Item href="#">Lorem </Dropdown.Item>
+                            <Dropdown.Item href="#">Lorem </Dropdown.Item>
+                            <Dropdown.Item href="#">Lorem </Dropdown.Item>
+
+                        </DropdownButton>
+
+                            </div>
+
+                            <div>
+                            <button className="product-button">Buy Now</button>
+                            </div>
+                            <div>
+                            <button className="product-button-outine ">Add to Cart</button>
+                            </div>
+                            <div>
+                            <button className="product-button-outine ">Add to Collection</button>
+                            </div>
+
+                            <div>
+                                <p className="product-text">SHARE</p>
+                            </div>
+
                         </div>
                     </div>
                     <div className="row row-3">
