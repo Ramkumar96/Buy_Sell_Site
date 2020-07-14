@@ -30,7 +30,6 @@ class CustomCard extends Component {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-
             </div>
         )
     }
