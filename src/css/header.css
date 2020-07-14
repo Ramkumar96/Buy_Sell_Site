@@ -162,13 +162,39 @@ Nav {
       width: 5em !important;
       
     }
-    .vl {
-      border-left: 2px solid rgb(167, 167, 167);
-      height: 40px;
-      position: absolute;
-      left: 50%;
-      margin-left: -3px;
-      top: 0;
-    }
+    
     
 }
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .vl {
+    border-left: 1.5px solid rgb(61, 61, 61);
+    height: 32px;
+    /* position: absolute; */
+    left: 38%;
+    top: 21px;
+    margin-left: 1em;
+    z-index: 1;
+  }
+  .searchTxt{
+    position: absolute;
+    margin-left: 1em;
+  }
+  .searchIcon{
+    margin-left: 8em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

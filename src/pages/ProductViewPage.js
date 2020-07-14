@@ -3,7 +3,7 @@ import '../css/ProductViewPage.css';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import CustomCard from '../components/HomeComponents/CustomCard';
+import CustomCard from '../components/CustomCard';
 
 import { Icon, InlineIcon } from '@iconify/react';
 import heartOutlined from '@iconify/icons-ant-design/heart-outlined';
