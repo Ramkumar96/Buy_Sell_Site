@@ -1,4 +1,8 @@
-
+.carousel {
+    width:900px;
+    height:500px;
+    margin: auto;
+  }
 /* Email Subscribe form Component */
 .subscribe-component{
     background-color: #F2F2F2;
@@ -49,7 +53,7 @@
 
 /* products card component */
 .container{
-    padding-top: 40px;
+    /* padding-top: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,6 +65,14 @@
     padding: 10px 25px;
 }
 
+.row-1{
+background-color: #ED5142;
+height: 80px;
+}
+
+.row-2{
+    height: 400px;
+}
 
 /* Picture Banner */
 .banner{
@@ -93,3 +105,27 @@
     height: 100vh;
     background-position: center;
 }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+   .homeSlider{
+       margin-bottom: 3em;
+   } 
+   .sliderImage{
+       height: 300px;
+       width: 100%;
+       background-color: #F5F5F5;
+   }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

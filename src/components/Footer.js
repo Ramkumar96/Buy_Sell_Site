@@ -12,21 +12,21 @@ const Footer = () => (
     <div className="footerComponent">
         <div className="container">
             <div className="row footer-content">
-                <div className="col-md-3 d-flex flex-column">
+                <div className="col-md-3 d-flex flex-column footer-links">
                     <p>Customer Service</p>
                     <a>Shipping Rates</a>
                     <a>Return Policy</a>
                     <a>FAQs</a>
                     <a>Contact info</a>
                 </div>
-                <div className="col-md-3 d-flex flex-column">
+                <div className="col-md-3 d-flex flex-column footer-links">
                     <p>Shopping</p>
                     <a>Women's</a>
                     <a>Men's</a>
                     <a>Kids</a>
                     <a>Brands</a>
                 </div>
-                <div className="col-md-3 d-flex flex-column">
+                <div className="col-md-3 d-flex flex-column footer-links">
                     <p>My Account</p>
                     <a>Login/Register</a>
                     <a>Order status</a>
@@ -50,7 +50,7 @@ const Footer = () => (
                         <p>1011 US Hwy 72 East, Athens AL 35611</p>
                     </div>
                     <div className="d-flex flex-row iconWrapper">
-                        <MdMail className="icons" /><p> deliveror@gmail.com</p>
+                        <MdMail className="icons" /><p> buy_sell@gmail.com</p>
                     </div>
                     <div className="d-flex flex-row iconWrapper">
                         <MdPhone className="icons" /><p>+1 609-666-4476</p>
@@ -65,7 +65,7 @@ const Footer = () => (
 
             <div className="horizontalLine"></div>
 
-            <div className="row d-flex copyright">
+            <div className="d-flex flex-row copyright">
                 <div class="bottomleft d-flex justify-content-start">
                     <p>Copyright Ⓒ buy&SellPortal. All rights reserved</p>
                 </div>

@@ -5,7 +5,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 import CategoriesCard from './CategoriesCard';
 import '../../css/TopCategories.css';
-import CustomCard from '../HomeComponents/CustomCard';
+import CustomCard from '../Components/CustomCard';
 import Brands from './Brands';
 
 

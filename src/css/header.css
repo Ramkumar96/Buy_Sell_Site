@@ -69,7 +69,7 @@
   padding-right: 1em;
 }
 .button-header {
-  background-color:  #ED5142;
+  background-color: var(--cta-color);
   color: white;
   border-radius: 3px;
   border: none;
@@ -162,13 +162,79 @@ Nav {
       width: 5em !important;
       
     }
-    .vl {
-      border-left: 2px solid rgb(167, 167, 167);
-      height: 40px;
-      position: absolute;
-      left: 50%;
-      margin-left: -3px;
-      top: 0;
-    }
+    
     
 }
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+ 
+}
+@media (min-width: 992px) { 
+  .signInContainer{
+    padding: 2em;
+    background-color: #F8F8F8;
+  }
+  .signInContainer h3{
+    color: var(--cta-color);
+    font-weight: bold;
+  }
+  .btn.btn-primary.btn-block{
+    background-color: var(--cta-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  .form-group label{
+    color: #596988;
+    font-weight:normal;
+  }
+  .forgot-password a{
+    color: #596988;
+    font-weight:normal;
+  }
+  .signup{
+    margin-top: 1em;
+  }
+  .signup p , .signup p > a{
+    color: #596988;
+  }
+  .signup p > a{
+    font-weight: bold;
+  }
+  .form-control{
+    background-color: transparent !important;
+    font-weight: normal;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  
+  .vl {
+    border-left: 1.5px solid rgb(61, 61, 61);
+    height: 32px;
+    /* position: absolute; */
+    left: 38%;
+    top: 21px;
+    margin-left: 1em;
+    z-index: 1;
+  }
+  .searchTxt{
+    position: absolute;
+    margin-left: 1em;
+  }
+  .searchIcon{
+    margin-left: 8em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

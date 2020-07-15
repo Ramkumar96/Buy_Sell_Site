@@ -13,6 +13,9 @@
     padding: 2rem 0;
     /* font-family: ; */
 }
+.footer-links a{
+    padding-bottom: 0.5em;
+}
 .footer-divider{
     border: 0.3px solid var(--main-bg-color);
 }
