@@ -7,7 +7,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl'
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import { Icon, InlineIcon } from '@iconify/react';
 import phoneAlt from '@iconify/icons-fa-solid/phone-alt';
 import baselineEmail from '@iconify/icons-ic/baseline-email';
@@ -24,118 +23,10 @@ import faqIcon from '@iconify/icons-wpf/faq';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button'
 
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+
 // import SignupModal from './SignupModal'
-
-
-const SigninModal = (props) => {
-    return (
-        <Modal
-            {...props}
-            size="lg"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
-        >
-            <form>
-                <div className="row">
-                    <div className="col-md-6"></div>
-                    <div className="col-md-6 d-flex flex-column signInContainer">
-                        <h3 className="text-center">Sign In</h3>
-                        <div className="form-group">
-                            <label>Email address</label>
-                            <input type="email" className="form-control" placeholder="abc@gmail.com" />
-                        </div>
-
-                        <div className="form-group">
-                            <label>Password</label>
-                            <input type="password" className="form-control" placeholder="*********" />
-                        </div>
-
-                        <div className="form-group">
-                            <div className="custom-control custom-checkbox">
-                                <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                                <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                            </div>
-                        </div>
-
-                        <button type="submit" className="btn btn-primary btn-block">LOGIN</button>
-                        <p className="forgot-password text-right">
-                            <a href="#">Forgot password?</a>
-                        </p>
-
-                        <div className="signup text-center">
-                           <p>Don't have an account? <a href="#" onClick={() => setModalShow(true)}><u>SIGNUP</u></a></p> 
-                        </div>
-                    </div>
-                </div>
-
-            </form>
-        </Modal>
-    )
-}
-
-const SignupModal = (props) => {
-    return (
-        <Modal
-            {...props}
-            size="lg"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
-        >
-            <form>
-                <div className="row">
-                    <div className="col-md-6"></div>
-                    <div className="col-md-6 d-flex flex-column signInContainer">
-                        <h3 className="text-center">Sign up</h3>
-                        <div className="form-group">
-                            <label>Full Name</label>
-                            <input type="text" className="form-control" placeholder="Eg: Harish Venkat" />
-                        </div>
-                        <div className="form-group">
-                            <label>Mobile Number</label>
-                            <input type="text" className="form-control" placeholder="Eg: 077 1234567" />
-                        </div>
-                        <div className="form-group">
-                            <label>Email address</label>
-                            <input type="email" className="form-control" placeholder="abc@gmail.com" />
-                        </div>
-
-                        <div className="form-group">
-                            <label>Password</label>
-                            <input type="password" className="form-control" placeholder="*********" />
-                        </div>
-
-                        <div className="form-group">
-                            <label>Confirm Password</label>
-                            <input type="password" className="form-control" placeholder="*********" />
-                        </div>
-
-                        <div className="form-group">
-                            <div className="custom-control custom-checkbox">
-                                <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                                <label className="custom-control-label" htmlFor="customCheck1">I agree to Terms & conditions</label>
-                            </div>
-                        </div>
-
-                        <button type="submit" className="btn btn-primary btn-block">SIGN UP</button>
-                        {/* <p className="forgot-password text-right">
-                            <a href="#">Forgot password?</a>
-                        </p> */}
-
-                        <div className="signup text-center">
-                           <p>Already have an account? <a href="#" onClick={() => setModalShow(true)}><u>LOGIN</u></a></p> 
-                        </div>
-                    </div>
-                </div>
-
-            </form>
-        </Modal>
-    )
-}
-
-
 const Header = () => {
-    const [modalShow, setModalShow] = React.useState(false);
-
     return (
         <>
             <div className="container-fluid header-top-bar">
@@ -160,11 +51,8 @@ const Header = () => {
                         <Icon icon={bxsUser} style={{ color: '#ffffff', fontSize: '18px' }} />
                         {/* <span className="headerTopText"> */}
                         <NavDropdown title="My Account" id="collasible-nav-dropdown" className="nav-dropdown dropdown-text" style={{ color: 'white' }}>
-                            <NavDropdown.Item onClick={() => setModalShow(true)}>Login / Register</NavDropdown.Item>
-                            <SigninModal
-                                show={modalShow}
-                                onHide={() => setModalShow(false)}
-                            />
+                            <NavDropdown.Item ><Link to="/LoginPage">Login / Register</Link></NavDropdown.Item>
+                            
                             {/* <NavDropdown.Item href="#action/3.2">Sign in</NavDropdown.Item> */}
                             <NavDropdown.Item>View Profile</NavDropdown.Item>
                         </NavDropdown>
