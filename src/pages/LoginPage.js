@@ -5,22 +5,25 @@ import FormControl from 'react-bootstrap/FormControl'
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import '../css/login.css';
 
 class LoginPage extends Component {
     render(){
         return(
             <form>
                 <div className="row">
-                    <div className="col-md-6"></div>
+                    <div className="col-md-6 leftBanner">
+                        <img src={require('../assets/images/c1.jpg')} />
+                    </div>
                     <div className="col-md-6 d-flex flex-column signInContainer">
-                        <h3 className="text-center">Login</h3>
+                        <h3 className="text-center">Welcome Back !</h3>
                         
-                        <div className="form-group">
+                        <div className="form-group inputGroup">
                             <label>Email address</label>
                             <input type="email" className="form-control" placeholder="abc@gmail.com" />
                         </div>
 
-                        <div className="form-group">
+                        <div className="form-group inputGroup">
                             <label>Password</label>
                             <input type="password" className="form-control" placeholder="*********" />
                         </div>
@@ -32,13 +35,13 @@ class LoginPage extends Component {
                             </div>
                         </div>
 
-                        <button type="submit" className="btn btn-primary btn-block">LOGIN</button>
-                        {/* <p className="forgot-password text-right">
+                        <button type="submit" className="btn btn-primary">LOGIN</button>
+                        <p className="forgot-password text-right">
                             <a href="#">Forgot password?</a>
-                        </p> */}
+                        </p>
 
                         <div className="signup text-center">
-                           <p>Already have an account? <a href="#"><Link to="/SignupPage"><u>SIGNUP</u></Link></a></p> 
+                           <p>Already have an account? <a href="#"><Link to="/signup"><u>SIGNUP</u></Link></a></p> 
                         </div>
                     </div>
                 </div>

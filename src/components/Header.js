@@ -51,7 +51,7 @@ const Header = () => {
                         <Icon icon={bxsUser} style={{ color: '#ffffff', fontSize: '18px' }} />
                         {/* <span className="headerTopText"> */}
                         <NavDropdown title="My Account" id="collasible-nav-dropdown" className="nav-dropdown dropdown-text" style={{ color: 'white' }}>
-                            <NavDropdown.Item ><Link to="/LoginPage">Login / Register</Link></NavDropdown.Item>
+                            <NavDropdown.Item ><Link to="/login">Login / Register</Link></NavDropdown.Item>
                             
                             {/* <NavDropdown.Item href="#action/3.2">Sign in</NavDropdown.Item> */}
                             <NavDropdown.Item>View Profile</NavDropdown.Item>
