@@ -64,7 +64,7 @@ class Home extends Component {
               <div className="justify-content-end">
                 <p>Sort by</p>
                 <form>
-                  <InputGroup className="mb-3 justify-content-center input-box">
+                  <InputGroup className="mb-3 justify-content-end input-box">
                     <DropdownButton
                       as={InputGroup.Prepend}
                       // variant="outline-secondary"
