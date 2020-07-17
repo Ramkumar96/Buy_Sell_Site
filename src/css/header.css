@@ -217,19 +217,25 @@ Nav {
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  
+  #input-group-dropdown-1{
+    padding-left: 1em;
+  }
+  .drop{
+    padding-left: 2em;
+  }
   .vl {
     border-left: 1.5px solid rgb(61, 61, 61);
     height: 32px;
     /* position: absolute; */
-    left: 38%;
+    left: 30%;
     top: 21px;
-    margin-left: 1em;
+    margin-left: -2em;
     z-index: 1;
   }
   .searchTxt{
     position: absolute;
     margin-left: 1em;
+    margin-right: -6em;
   }
   .searchIcon{
     margin-left: 8em;
