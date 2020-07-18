@@ -1,0 +1,135 @@
+.checkoutPageContainer{
+    margin: 20px 120px;
+}
+
+.collapsible {
+    background-color:#E8E8E83;
+    border-radius: 5px;
+    color:black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .active, .collapsible:hover {
+    /* background-color: 	#C0C0C0; */
+    outline: none;
+  }
+  
+  .content {
+    /* padding: 0 18px; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffffff;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    outline: none;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    outline: none;
+  }
+
+
+  .container-total {
+    background-color: #f2f2f2;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+
+  
+span.price {
+    float: right;
+    color: grey;
+  }
+
+p {
+    font-weight: 500;
+}
+
+
+.container-address{
+    /* display: flex; */
+    padding: 20px 40px ;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+}
+/* 
+.col-25{
+    padding: 5px;
+}
+
+.col-75{
+ padding: 5px;
+} */
+hr { width:100%; height:1px; background:grey }
+
+
+
+
+/* Style the form - display items horizontally */
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  /* Add some margins for each label */
+label {
+    margin: 5px 0px 5px 0px;
+    width: 40%;
+    align-items: center;
+    vertical-align: middle;
+  }
+  
+  /* Style the input fields */
+input {
+    vertical-align: middle;
+    margin: 5px 0px 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 60%;
+  }
+  
+  .save-button {
+    background-color: #ed5142;
+    color: white;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 6px 2px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* Style the submit button */
+  .form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+  }
+  
+  .form-inline button:hover {
+    background-color: royalblue;
+  }

@@ -8,13 +8,15 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home'
+import CheckOutPage from './pages/CheckOutPage';
 
 const App = () => {
   return (
     <>
     <Header/>
-    <Home/>
+    {/* <Home/> */}
     {/* <ProductViewPage/> */}
+    <CheckOutPage/>
     <Footer/>
     </>
   )
