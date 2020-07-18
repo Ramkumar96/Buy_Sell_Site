@@ -42,7 +42,7 @@ class Home extends Component {
         {/* <Slider {...settings}> */}
         <div className="sliderImage">
           <h1>Dive right in</h1>
-          <h2>Limited collection</h2>
+          <p>Limited collection</p>
           <div className="bannersideimg">
             <img src={require('../assets/images/bannersideimg.png')} />
           </div>

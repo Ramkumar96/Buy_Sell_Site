@@ -121,6 +121,7 @@ background-color: #ED5142;
        height: 300px;
        width: 100%;
        background-color: #F5F5F5;
+       margin-top: 1em;
        margin-bottom: 3em;
    }
    .input-box p{
@@ -130,7 +131,7 @@ background-color: #ED5142;
    .sortby-feature{
     position: absolute;
     right: 13.5em;
-    top: 35em;
+    top: 38em;
    }
    #input-group-dropdown{
        border: 1px solid #ccc;
@@ -138,7 +139,7 @@ background-color: #ED5142;
        
    }
    .products-section{
-       margin: 3em 0 5em;
+       margin: 5em 0 5em;
        /* position: relative; */
    }
    .products-list{
@@ -154,7 +155,7 @@ background-color: #ED5142;
    .bannerimg{
        position: absolute;
        right: 3em;
-       top: 13.5em;
+       top: 15em;
    }
    .bannerimg img{
        width: 70%;
@@ -162,6 +163,12 @@ background-color: #ED5142;
    .sliderImage h1{
        position: absolute;
        left: 15%;
+   }
+   .sliderImage p{
+       font-size: 35px;
+       font-weight: bold;
+       position: absolute;
+       top: 50%;
    }
 }
 
