@@ -39,6 +39,8 @@
 }
 .bottomright{
     padding: 0.1rem;
+    position: absolute;
+    right: 14em;
 }
 
 .bottomleft{

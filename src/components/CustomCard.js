@@ -9,7 +9,7 @@ class CustomCard extends Component {
     render() {
         return (
             <div>
-                <div className="body">
+                {/* <div className="body"> */}
                     <div className="product">
                         <div className="imgbox">
                             <img src={require('../assets/images/cardImage.png')} />
@@ -17,9 +17,9 @@ class CustomCard extends Component {
                         <div className="details">
                             <h2>T Shirt <br /> <span> Men's Designer T-shirt</span> </h2>
                             <div className="price"> $55.99</div>
-                            <label>Rating</label>
+                            {/* <label>Rating</label> */}
                             <p className="ratings">
-                                <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
+                                <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} className="rating-star" />
                                 <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
                                 <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
                                 <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
@@ -34,10 +34,10 @@ class CustomCard extends Component {
                                 <li></li>
                                 <li></li>
                             </ul> */}
-                            <a className="link" href="#">Add To Cart</a>
+                            <a className="add-to-cart" href="#">Add to cart</a>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
 
 
 

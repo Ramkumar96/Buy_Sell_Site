@@ -38,87 +38,111 @@ class Home extends Component {
 
     return (
       <>
-        <div className="homeSlider">
-          <Slider {...settings}>
-            <div className="sliderImage">
-              {/* <img src={require('../assets/images/c1.jpg')} /> */}
-            </div>
-            <div className="sliderImage">
-              {/* <img src={require('../assets/images/c2.jpg')} /> */}
-            </div>
-            <div className="sliderImage">
-              {/* <img src={require('../assets/images/c3.jpg')} /> */}
-            </div>
-          </Slider>
+        {/* <div className="homeSlider"> */}
+        {/* <Slider {...settings}> */}
+        <div className="sliderImage">
+          <h1>Dive right in</h1>
+          <h2>Limited collection</h2>
+          <div className="bannersideimg">
+            <img src={require('../assets/images/bannersideimg.png')} />
+          </div>
+          <div className="bannerimg">
+            <img src={require('../assets/images/bannerimg.png')} />
+          </div>
         </div>
+        {/* </Slider> */}
+        {/* </div> */}
 
 
         {/* product section */}
-        <div className="container">
+        <div className="container products-section">
+          <h3>Newest products</h3>
+          <div className="sortby-feature">
+            <form>
+              <InputGroup className="input-box">
+                {/* <p>Sort by</p> */}
+                <DropdownButton
+                  as={InputGroup.Prepend}
+                  variant="outline-secondary"
+                  title="Newest"
+                  id="input-group-dropdown"
+                  className="drop"
+                >
+                  <Dropdown.Item href="#">Featured</Dropdown.Item>
+                  <Dropdown.Item href="#">On sale</Dropdown.Item>
+                </DropdownButton>
+              </InputGroup>
+            </form>
+          </div>
 
-          <div className="row row-1">
-            <div className="d-flex flex-row">
-              <div className="justify-content-start">
-                <h2>Newest products</h2>
-              </div>
-              <div className="justify-content-end">
-                <p>Sort by</p>
-                <form>
-                  <InputGroup className="mb-3 justify-content-end input-box">
-                    <DropdownButton
-                      as={InputGroup.Prepend}
-                      // variant="outline-secondary"
-                      title="Newest"
-                      id="input-group-dropdown-1"
-                      className="drop"
-                    >
-                      <Dropdown.Item href="#">Featured</Dropdown.Item>
-                      <Dropdown.Item href="#">On sale</Dropdown.Item>
-                    </DropdownButton>
-                  </InputGroup>
-                </form>
-              </div>
+          <div className="row products-list">
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
             </div>
           </div>
 
-          {/* Card Row 01 */}
-          <div className="row row-2">
-            <div className="col-md-3">
+          <div className="row products-list">
+            <div className="col-xs-6 col-md-3">
               <CustomCard />
             </div>
-            <div className="col-md-3">
+            <div className="col-xs-6 col-md-3">
               <CustomCard />
             </div>
-            <div className="col-md-3">
+            <div className="col-xs-6 col-md-3">
               <CustomCard />
             </div>
-            <div className="col-md-3">
-              <CustomCard />
-            </div>
-          </div>
-          {/* Card Row 02 */}
-          <div className="row row-2">
-            <div className="col-md-3">
-              <CustomCard />
-            </div>
-            <div className="col-md-3">
-              <CustomCard />
-            </div>
-            <div className="col-md-3">
-              <CustomCard />
-            </div>
-            <div className="col-md-3">
+            <div className="col-xs-6 col-md-3">
               <CustomCard />
             </div>
           </div>
         </div>
+
+        {/* <div className="row product-container">
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            <div className="col-xs-6col-md-3">
+              <CustomCard />
+            </div>
+          </div> */}
+        {/* Card Row 02 */}
+        {/* <div className="row row-2">
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+          </div> */}
+
 
         {/* subscribe form component */}
         <div className="container-fluid subscribe-component">
           <p className="text-center subscribe-title">Enjoy our Exclusive Deals and Offers</p>
           <form className="form-inline">
             <input type="email" id="email" placeholder="Enter your email address" name="email" />
-            <button className="button">SUBSCRIBE</button>
+            <button className="subscribe-button">SUBSCRIBE</button>
           </form>
         </div>
       </>

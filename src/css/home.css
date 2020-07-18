@@ -34,19 +34,19 @@
     margin-right: 32px;
     border-radius: 3px;
   }
-  .form-inline button {
+  .form-inline .subscribe-button {
     background-color:  #ED5142;
     color: white;
     border-radius: 3px;
     border: none;
-    padding: auto;
+    padding: 0.5em 4em;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    width: 200px;
-    height: 48px;
+    /* width: 200px; */
+    /* height: 48px; */
   }
 
 
@@ -67,11 +67,11 @@
 
 .row-1{
 background-color: #ED5142;
-height: 80px;
+/* height: 80px; */
 }
 
 .row-2{
-    height: 400px;
+    /* height: 400px; */
 }
 
 /* Picture Banner */
@@ -121,8 +121,53 @@ height: 80px;
        height: 300px;
        width: 100%;
        background-color: #F5F5F5;
+       margin-bottom: 3em;
+   }
+   .input-box p{
+       position: absolute;
+       top: 2px;
+   }
+   .sortby-feature{
+    position: absolute;
+    right: 13.5em;
+    top: 35em;
+   }
+   #input-group-dropdown{
+       border: 1px solid #ccc;
+       border-radius: 3px;
+       
+   }
+   .products-section{
+       margin: 3em 0 5em;
+       /* position: relative; */
+   }
+   .products-list{
+       margin: 15em 0 10em;
+   }
+   .bannersideimg{
+       position: absolute;
+       top: 14em;
+   }
+   .bannersideimg img{
+        width: 80%;
+   }
+   .bannerimg{
+       position: absolute;
+       right: 3em;
+       top: 13.5em;
+   }
+   .bannerimg img{
+       width: 70%;
+   }
+   .sliderImage h1{
+       position: absolute;
+       left: 15%;
    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    .product-container{
+        padding-top: 3em;
+    }
+ }
