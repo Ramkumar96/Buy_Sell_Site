@@ -26,6 +26,7 @@ import Button from 'react-bootstrap/Button'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 
 // import SignupModal from './SignupModal'
+
 const Header = () => {
     return (
         <>
@@ -52,7 +53,7 @@ const Header = () => {
                         {/* <span className="headerTopText"> */}
                         <NavDropdown title="My Account" id="collasible-nav-dropdown" className="nav-dropdown dropdown-text" style={{ color: 'white' }}>
                             <NavDropdown.Item ><Link to="/login">Login / Register</Link></NavDropdown.Item>
-                            
+
                             {/* <NavDropdown.Item href="#action/3.2">Sign in</NavDropdown.Item> */}
                             <NavDropdown.Item>View Profile</NavDropdown.Item>
                         </NavDropdown>
@@ -64,11 +65,20 @@ const Header = () => {
             </div>
 
             <div className="row logo-row">
-                <div className="col-md-3">
-                    <a href="">Buy&Sell Portal</a>
+                <div className="header-top-left-mobile col-xs-12">
+                    <div className="hamburger-menu"></div>
+                    <div className="col-md-3">
+                        <a href="">Buy&Sell Portal</a>
+                    </div>
+                    <div className="header-top-right-mobile">
+                        <a href="">
+                            <Icon icon={shoppingCartOutlined} className="cart-icon" style={{ color: '#3d3d3d', fontSize: '30px', marginRight: '1em', marginTop: '0.5em' }} />
+                        </a>
+                    </div>
                 </div>
 
-                <div className="col-md-5 input-container">
+
+                <div className="col-xs-12 col-md-5 input-container">
                     <form>
                         <InputGroup className="mb-3 justify-content-center input-box">
                             <Icon icon={folderOpenOutlined} style={{ color: '#3d3d3d', fontSize: '30px', marginTop: '2px' }} />
@@ -98,7 +108,7 @@ const Header = () => {
                     </form>
                 </div>
 
-                <div className="col-md-4 icons-right d-flex justify-content-end">
+                <div className="col-md-4 icons-right">
                     <a href="">
                         <Icon icon={shoppingCartOutlined} className="cart-icon" style={{ color: '#3d3d3d', fontSize: '30px', marginRight: '1em', marginTop: '0.5em' }} />
                     </a>
@@ -109,21 +119,24 @@ const Header = () => {
                 </div>
             </div>
 
-            <Navbar collapseOnSelect expand="lg">
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav" className="links" >
-                    <Nav>
-                        <Nav.Link href="/home" className="category-link">WOMEN'S</Nav.Link>
-                        <Nav.Link eventKey="link-1" className="category-link">MEN'S</Nav.Link>
-                        <Nav.Link eventKey="link-2" className="category-link">KID'S</Nav.Link>
-                        <Nav.Link href="/home" className="category-link">SHOES</Nav.Link>
-                        <Nav.Link eventKey="link-1" className="category-link">CLOTHING</Nav.Link>
-                        <Nav.Link eventKey="link-2" className="category-link">ACCESSORIES</Nav.Link>
-                        <Nav.Link eventKey="link-1" className="category-link">BAGS</Nav.Link>
-                        <Nav.Link eventKey="link-1" className="category-link">ELECTRONICS</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <dic className="categories-section">
+                <Navbar collapseOnSelect expand="lg">
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav" className="links" >
+                        <Nav>
+                            <Nav.Link href="/home" className="category-link">WOMEN'S</Nav.Link>
+                            <Nav.Link eventKey="link-1" className="category-link">MEN'S</Nav.Link>
+                            <Nav.Link eventKey="link-2" className="category-link">KID'S</Nav.Link>
+                            <Nav.Link href="/home" className="category-link">SHOES</Nav.Link>
+                            <Nav.Link eventKey="link-1" className="category-link">CLOTHING</Nav.Link>
+                            <Nav.Link eventKey="link-2" className="category-link">ACCESSORIES</Nav.Link>
+                            <Nav.Link eventKey="link-1" className="category-link">BAGS</Nav.Link>
+                            <Nav.Link eventKey="link-1" className="category-link">ELECTRONICS</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </dic>
+
         </>
     )
 }
