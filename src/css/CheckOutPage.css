@@ -133,3 +133,28 @@ input {
   .form-inline button:hover {
     background-color: royalblue;
   }
+
+
+/* Payment container */
+
+.panel-header{
+  
+  display: inline;
+}
+
+.panel-title {display: inline;font-weight: bold;}
+
+.panel{
+  margin-top: 10px;
+  /* background-color:rebeccapurple; */
+  border: solid 1px lightgray;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+
+.checkbox{
+  display: inline;
+}
+.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }

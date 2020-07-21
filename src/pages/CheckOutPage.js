@@ -33,7 +33,7 @@ export default class CheckOutPage extends Component {
                         <div className="content">
                             <div class="container-orderSummary">
                                 <div class="card">
-                                    <table className="table table-hover shopping-cart-wrap">
+                                    <table className="table">
                                         <thead className="text-muted">
                                             <tr>
                                                 <th scope="col">Product</th>
@@ -42,12 +42,12 @@ export default class CheckOutPage extends Component {
                                                 <th scope="col" width={200} className="text-right">Action</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-
-                                            <OrderSummary />
-                                            <OrderSummary />
-
-                                        </tbody>
+                                        <OrderSummary />
+                                        
+                                        <OrderSummary />
+                                        
+                                        <OrderSummary />
+                                        
                                     </table>
 
                                 </div>
@@ -91,9 +91,85 @@ export default class CheckOutPage extends Component {
                                     </div>
                                     <div className="form-group">
                                         <button className="save-button">SAVE & CONTINUE</button>
-                                       </div>
-                                  
+                                    </div>
+
                                 </div>
+                            </div>
+                        </div>
+
+                        {/* Payment Details */}
+                        <button className="collapsible" onClick={this.onClickCollapse}>PAYMENT</button>
+                        <div className="content">
+                            <div className="container-address">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col">
+                                            <div className="panel">
+                                                <div className="row">
+                                                    <div className="col-8">
+                                                        <h3 className="panel-title">
+                                                            Payment Details
+                                                    </h3>
+                                                    </div>
+                                                    <div className=" col-4">
+                                                        <label  className="panel-header">
+                                                            <input type="checkbox"/>
+                                                            <p>Remember</p>
+                                                     </label>
+                                                    </div>
+                                                </div>
+                                                <div className="panel-body">
+                                                    <form role="form">
+
+                                                    <div className="form-group">
+                                                            <label htmlFor="nameoncard">
+                                                                NAME ON CARD</label>
+                                                            <div className="input-group">
+                                                                <input type="text" className="form-control" id="cardNumber" placeholder="Name on Card" required autofocus />
+                                                                <span className="input-group-addon"><span className="glyphicon glyphicon-lock" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <label htmlFor="cardNumber">
+                                                                CARD NUMBER</label>
+                                                            <div className="input-group">
+                                                                <input type="text" className="form-control" id="cardNumber" placeholder="Valid Card Number" required autofocus />
+                                                                <span className="input-group-addon"><span className="glyphicon glyphicon-lock" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="row">
+                                                            <div className="col-7">
+                                                                <div className="form-group">
+                                                                    <label htmlFor="expityMonth">
+                                                                        EXPIRY DATE
+                                                                    </label>
+                                                                    <div className="row">
+                                                                    <div className="col-6">
+                                                                        <input type="text" className="form-control" id="expityMonth" placeholder="MM" required />
+                                                                    </div>
+                                                                    <div className="col-6">
+                                                                        <input type="text" className="form-control" id="expityYear" placeholder="YY" required />
+                                                                    </div>    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div className="col-4 pull-right">
+                                                                <div className="form-group">
+                                                                    <label htmlFor="cvCode">
+                                                                        CV CODE</label>
+                                                                    <input type="password" className="form-control" id="cvCode" placeholder="CV" required />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <a href="http://www.jquery2dotnet.com" className="btn btn-success btn-lg btn-block" role="button">Pay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 

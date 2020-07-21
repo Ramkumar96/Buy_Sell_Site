@@ -4,9 +4,9 @@ import '../css/OrderSummary.css';
 export default class OrderSummary extends Component {
     render() {
         return (
-            <div className="ordersummary-row">
-                <div className="media-container">
-                    <figure className="media">
+            <div className="ordersummary-row" >
+                <tbody>
+                <figure className="media">
                         <div className="img-wrap"><img src="http://bootstrap-ecommerce.com/main/images/items/1.jpg" className="img-thumbnail img-sm" /></div>
                         <figcaption className="media-body">
                             <h6 className="title text-truncate">Product name goes here </h6>
@@ -20,7 +20,10 @@ export default class OrderSummary extends Component {
                             </dl>
                         </figcaption>
                     </figure>
-                </div>
+
+                </tbody>
+                <tbody>
+
                 <div className="option-container">
                     <select className="form-control">
                         <option>1</option>
@@ -29,15 +32,23 @@ export default class OrderSummary extends Component {
                         <option>4</option>
                     </select>
                 </div>
-                <div className="price-container ">
+
+                </tbody>
+                <tbody>
+
+                <div className="price-container">
                     <var className="price">USD 35</var>
                     <small className="text-muted">(USD10 each)</small>
-                </div> {/* price-wrap .// */}
+                </div>
+
+                </tbody>
+                <tbody>
                 <div className="bt-container text-right">
                     <a title href className="btn btn-outline-success" data-toggle="tooltip" data-original-title="Save to Wishlist"> <i className="fa fa-heart" /></a>
                     <a href className="btn btn-outline-danger btn-round"><i className="fa fa-trash" /></a>
                 </div>
 
+                </tbody>
 
             </div>
         )
