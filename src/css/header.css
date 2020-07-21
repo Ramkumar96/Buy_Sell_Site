@@ -64,10 +64,7 @@
   padding-top: 20px;
   /* padding: 5px; */
 }
-.icons-right{
-  /* padding-left: 30px; */
-  padding-right: 1em;
-}
+
 .button-header {
   background-color: var(--cta-color);
   color: white;
@@ -225,8 +222,39 @@ Nav.Link {
   
 }
 
+
+/* Features disable in Mobile,ipad, ipad pro */
+
+@media (max-width: 1199.98px) { 
+  .hamburger-menu{
+    background-image: url();
+  }
+  .header-top-right-mobile{
+
+  }
+  .header-top-bar{
+    display: none;
+  }
+  .categories-section{
+      display: none;
+  }
+  .icons-right{
+    display: none !important;
+  }
+}
+
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+  .header-top-right-mobile{
+    display: none;
+  }
+  .icons-right{
+    /* padding-left: 30px; */
+    display: flex;
+    justify-content: end;
+    padding-right: 1em;
+  }
   #input-group-dropdown-1{
     padding-left: 1em;
   }

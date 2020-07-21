@@ -16,14 +16,14 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl'
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 
-import '../css/_slick.css';
-import '../css/_slickTheme.css'
+// import '../css/_slick.css';
+// import '../css/_slickTheme.css'
 
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 class Home extends Component {
   render() {
@@ -139,7 +139,7 @@ class Home extends Component {
 
         {/* subscribe form component */}
         <div className="container-fluid subscribe-component">
-          <p className="text-center subscribe-title">Enjoy our Exclusive Deals and Offers</p>
+          <p className="text-center">Enjoy our Exclusive Deals and Offers</p>
           <form className="form-inline">
             <input type="email" id="email" placeholder="Enter your email address" name="email" />
             <button className="subscribe-button">SUBSCRIBE</button>

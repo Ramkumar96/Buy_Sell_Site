@@ -22,7 +22,7 @@
 .copyright{
     color: var(--main-bg-color);
     font-size: 14px;
-    padding-right: 700px;
+    /* padding-right: 700px; */
 }
 .payment-cards{
     padding: 5px 5px;
@@ -35,12 +35,12 @@
 }
 .copyright{
     color:white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .bottomright{
-    padding: 0.1rem;
+    /* padding: 0.1rem;
     position: absolute;
-    right: 14em;
+    right: 14em; */
 }
 
 .bottomleft{
@@ -58,10 +58,37 @@
 }
 
 
-@media only screen and (max-width: 768px) {
-    
+/* Features in Mobile,ipad, ipad pro */
+
+@media (max-width: 1199.98px) { 
+    .bottomleft p{
+        text-align: center;
+    }
+    .bottomright{
+        display: flex;
+        order: 1;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
     .bottomleft{
-        margin: 0rem;
-        padding: 8px;
+        display: flex;
+        order: 2;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .bottomright{
+        display: flex;
+        justify-content: end;
+    }
+    .bottomleft{
+        display: flex;
+        justify-content: start;
     }
 }
