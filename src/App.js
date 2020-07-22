@@ -4,7 +4,7 @@ import './App.css';
 // import TopCategories from  './components/CategoriesComponents/TopCategories';
 
 
-// import ProductViewPage from './pages/ProductViewPage';
+import ProductViewPage from './pages/ProductViewPage';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home'
@@ -14,9 +14,9 @@ const App = () => {
   return (
     <>
     <Header/>
-    <Home/>
+    {/* <Home/> */}
     {/* <ProductViewPage/> */}
-    {/* <CheckOutPage/> */}
+    <CheckOutPage/>
     <Footer/>
     </>
   )
