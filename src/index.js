@@ -18,6 +18,7 @@ const routing = (
       </div>
   </Router>
 )
+
 ReactDOM.render(routing, document.getElementById('root'));
 
 // ReactDOM.render(
