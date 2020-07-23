@@ -63,7 +63,7 @@ const SigninModal = (props) => {
                         </p>
 
                         <div className="signup text-center">
-                           <p>Don't have an account? <a href="#" onClick={() => setModalShow(true)}><u>SIGNUP</u></a></p> 
+                           {/* <p>Don't have an account? <a href="#" onClick={() => setModalShow(true)}><u>SIGNUP</u></a></p>  */}
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@ const SignupModal = (props) => {
                         </p> */}
 
                         <div className="signup text-center">
-                           <p>Already have an account? <a href="#" onClick={() => setModalShow(true)}><u>LOGIN</u></a></p> 
+                           {/* <p>Already have an account? <a href="#" onClick={() => setModalShow(true)}><u>LOGIN</u></a></p>  */}
                         </div>
                     </div>
                 </div>
@@ -160,11 +160,11 @@ const Header = () => {
                         <Icon icon={bxsUser} style={{ color: '#ffffff', fontSize: '18px' }} />
                         {/* <span className="headerTopText"> */}
                         <NavDropdown title="My Account" id="collasible-nav-dropdown" className="nav-dropdown dropdown-text" style={{ color: 'white' }}>
-                            <NavDropdown.Item onClick={() => setModalShow(true)}>Login / Register</NavDropdown.Item>
+                            {/* <NavDropdown.Item onClick={() => setModalShow(true)}>Login / Register</NavDropdown.Item>
                             <SigninModal
                                 show={modalShow}
                                 onHide={() => setModalShow(false)}
-                            />
+                            /> */}
                             {/* <NavDropdown.Item href="#action/3.2">Sign in</NavDropdown.Item> */}
                             <NavDropdown.Item>View Profile</NavDropdown.Item>
                         </NavDropdown>
