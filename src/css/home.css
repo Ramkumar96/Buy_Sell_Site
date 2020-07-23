@@ -1,52 +1,28 @@
-.carousel {
-    width:900px;
-    height:500px;
-    margin: auto;
-  }
 /* Email Subscribe form Component */
-.subscribe-component{
-    background-color: #F2F2F2;
-    padding: 2rem;
-}
 
-.subscribe-title{
+.subscribe-component p{
     color:#04173F;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
-.form-inline {
+.form-inline{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    margin-top: 36px;
-    margin-bottom: 48px;
     justify-content: center;
-  }
+    padding: 1em;
+}
 
-  .form-inline input {
-    vertical-align: middle;
-    margin: 5px 10px 5px 0;
-    padding: 10px;
-    background-color:  #F2F2F2;
-    border: 1px solid rgb(226, 226, 226);
-    width: 60%;
-    margin-right: 32px;
-    border-radius: 3px;
-  }
-  .form-inline button {
+  
+  .form-inline .subscribe-button {
     background-color:  #ED5142;
     color: white;
     border-radius: 3px;
     border: none;
-    padding: auto;
-    text-align: center;
     font-weight: bold;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-    width: 200px;
-    height: 48px;
   }
 
 
@@ -65,55 +41,6 @@
     padding: 10px 25px;
 }
 
-.row-1{
-background-color: #ED5142;
-height: 80px;
-}
-
-.row-2{
-    height: 400px;
-}
-
-/* Picture Banner */
-.banner{
-    padding: 40px 154px;
-    height: 356px;
-}
-
-.banner-left{
-    background-image: url('../assets/images/banner-left.jpg');
-    background-size: 100% 100%;
-}
-
-.banner-right{
-    background-image: url('../assets/images/banner-right.jpg');
-    background-size: 100% 100%;
-}
-
-
-
-/* carousel banner */
-@media (min-width: 768px) { 
-    .img-carousel {
-        width: 100%;
-        height: 100vh;
-    }
-}
-
-.img-fill{
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {  }
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -124,8 +51,274 @@ height: 80px;
        height: 300px;
        width: 100%;
        background-color: #F5F5F5;
+       margin-top: 1em;
+       margin-bottom: 3em;
    }
+   .input-box p{
+       position: absolute;
+       top: 2px;
+   }
+   
+   #input-group-dropdown{
+       border: 1px solid #ccc;
+       border-radius: 3px;
+       
+   }
+   
+   
+   
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .form-inline input {
+        vertical-align: middle;
+        /* margin: 5px 10px 5px 0; */
+        padding: 10px;
+        background-color:  #F2F2F2;
+        border: 1px solid rgb(226, 226, 226);
+        width: 60%;
+        margin-bottom: 1em;
+        /* margin-right: 32px; */
+        /* border-radius: 3px; */
+    }
+    .form-inline {
+        display: flex;
+        flex-direction: column;
+        /* flex-flow: row wrap; */
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+    }
+    .form-inline .subscribe-button {
+        padding: 0.5em 4.6em;
+        /* text-align: center; */
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .sortby-feature{
+        position: absolute;
+        right: 1em;
+        top: 4.5em;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .products-list{
+        padding: 8em 1em;
+    }
+    .sortby-feature{
+        position: absolute;
+        right: 3em;
+        top: 8em;
+    }
+    .products-section{
+        margin: 3em 0 ;
+        /* position: relative; */
+    }
+    /* .product{
+        padding: 10px;
+    } */
+}
+@media (min-width: 992px) { 
+  
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .products-list{
+        padding: 12em 0;
+        margin: 1em;
+    }
+    /* .product{
+        padding: 10px;
+    } */
+    .sortby-feature{
+        position: absolute;
+        right: 4em;
+        top: 6em;
+    }
+    .products-section{
+        padding: 1em 0;
+    }
+}
+
+
+/* Features disable in Mobile,ipad, ipad pro */
+
+@media (max-width: 1199.98px) { 
+    
+    .products-section h3{
+        font-size: 18px;
+    }
+    .sliderImage{
+        display: none;
+    }
+    .subscribe-component{
+        background-color: #F2F2F2;
+        padding: 1rem 15em;
+    }
+    .subscribe-component p {
+        text-align: center;
+    }
+    
+    
+}
+
+@media (min-width: 768px) { 
+    .form-inline input {
+        vertical-align: middle;
+        /* margin: 5px 10px 5px 0; */
+        padding: 10px;
+        background-color:  #F2F2F2;
+        border: 1px solid rgb(226, 226, 226);
+        width: 60%;
+        margin-right: 32px;
+        /* border-radius: 3px; */
+      }
+        .form-inline{
+            padding: 2em;
+            display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        }
+        .subscribe-component{
+            background-color: #F2F2F2;
+            padding: 2rem;
+        }
+        .subscribe-component p{
+            color:#04173F;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .product-container{
+            padding-top: 3em;
+        }
+        .bannersideimg{
+            position: absolute;
+            top: 14em;
+        }
+        .bannersideimg img{
+             width: 80%;
+        }
+        .bannerimg{
+            position: absolute;
+            right: 3em;
+            top: 15em;
+        }
+        .bannerimg img{
+            width: 70%;
+        }
+        .sliderImage h1{
+            position: absolute;
+            left: 15%;
+        }
+        .sliderImage p{
+            font-size: 35px;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+        }
+        .form-inline .subscribe-button {
+            background-color:  #ED5142;
+            color: white;
+            border-radius: 3px;
+            border: none;
+            padding: 0.5em 4em;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            /* width: 200px; */
+            /* height: 48px; */
+          }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    .sortby-feature{
+        position: absolute;
+        right: 13.5em;
+        top: 38em;
+    }
+    .products-list{
+        margin: 15em 0 10em;
+    }
+    .form-inline input {
+    vertical-align: middle;
+    /* margin: 5px 10px 5px 0; */
+    padding: 10px;
+    background-color:  #F2F2F2;
+    border: 1px solid rgb(226, 226, 226);
+    width: 60%;
+    margin-right: 32px;
+    /* border-radius: 3px; */
+  }
+    .form-inline{
+        padding: 2em;
+        display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    }
+    .subscribe-component{
+        background-color: #F2F2F2;
+        padding: 2rem;
+    }
+    .subscribe-component p{
+        color:#04173F;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .product-container{
+        padding-top: 3em;
+    }
+    .bannersideimg{
+        position: absolute;
+        top: 14em;
+    }
+    .bannersideimg img{
+         width: 80%;
+    }
+    .bannerimg{
+        position: absolute;
+        right: 3em;
+        top: 15em;
+    }
+    .bannerimg img{
+        width: 70%;
+    }
+    .sliderImage h1{
+        position: absolute;
+        left: 15%;
+    }
+    .sliderImage p{
+        font-size: 35px;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+    }
+    .form-inline .subscribe-button {
+        background-color:  #ED5142;
+        color: white;
+        border-radius: 3px;
+        border: none;
+        padding: 0.5em 4em;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        /* width: 200px; */
+        /* height: 48px; */
+      }
+    
+ }

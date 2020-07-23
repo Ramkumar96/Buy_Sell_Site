@@ -64,10 +64,7 @@
   padding-top: 20px;
   /* padding: 5px; */
 }
-.icons-right{
-  /* padding-left: 30px; */
-  padding-right: 1em;
-}
+
 .button-header {
   background-color: var(--cta-color);
   color: white;
@@ -94,10 +91,11 @@ Nav {
   justify-content:center;
   }
 
-  Nav.Link {
-    display:flex;
-    justify-content:space-between;
-    }
+Nav.Link {
+  display:flex;
+  padding-right: 5em;
+  justify-content:space-between;
+}
 
 
 
@@ -142,7 +140,7 @@ Nav {
     .category-link{
       color: var(--icon-color) !important;
       font-weight: bold;
-      padding-right: 5rem;
+      padding-right: 8rem;
       /* padding-left: 2rem; */
   }
     .categories{
@@ -178,6 +176,10 @@ Nav {
  
 }
 @media (min-width: 992px) { 
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 2em !important;
+    padding-left: 2em !important;
+  }
   .signInContainer{
     padding: 2em;
     background-color: #F8F8F8;
@@ -218,23 +220,62 @@ Nav {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   
+}
+
+
+/* Features disable in Mobile,ipad, ipad pro */
+
+@media (max-width: 1199.98px) { 
+  .hamburger-menu{
+    background-image: url();
+  }
+  .header-top-right-mobile{
+
+  }
+  .header-top-bar{
+    display: none;
+  }
+  .categories-section{
+      display: none;
+  }
+  .icons-right{
+    display: none !important;
+  }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .header-top-right-mobile{
+    display: none;
+  }
+  .icons-right{
+    /* padding-left: 30px; */
+    display: flex;
+    justify-content: end;
+    padding-right: 1em;
+  }
+  #input-group-dropdown-1{
+    padding-left: 1em;
+  }
+  .drop{
+    padding-left: 2em;
+  }
   .vl {
     border-left: 1.5px solid rgb(61, 61, 61);
     height: 32px;
     /* position: absolute; */
-    left: 38%;
+    left: 30%;
     top: 21px;
-    margin-left: 1em;
+    margin-left: -2em;
     z-index: 1;
   }
   .searchTxt{
     position: absolute;
     margin-left: 1em;
+    margin-right: -6em;
   }
   .searchIcon{
     margin-left: 8em;
   }
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }

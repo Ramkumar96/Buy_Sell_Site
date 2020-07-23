@@ -12,28 +12,28 @@ const Footer = () => (
     <div className="footerComponent">
         <div className="container">
             <div className="row footer-content">
-                <div className="col-md-3 d-flex flex-column footer-links">
+                <div className="col-xs-6 col-md-3 d-flex flex-column footer-links">
                     <p>Customer Service</p>
                     <a>Shipping Rates</a>
                     <a>Return Policy</a>
                     <a>FAQs</a>
                     <a>Contact info</a>
                 </div>
-                <div className="col-md-3 d-flex flex-column footer-links">
+                <div className="col-xs-6 col-md-3 d-flex flex-column footer-links">
                     <p>Shopping</p>
                     <a>Women's</a>
                     <a>Men's</a>
                     <a>Kids</a>
                     <a>Brands</a>
                 </div>
-                <div className="col-md-3 d-flex flex-column footer-links">
+                <div className="col-xs-6 col-md-3 d-flex flex-column footer-links">
                     <p>My Account</p>
                     <a>Login/Register</a>
                     <a>Order status</a>
                     <a>Order History</a>
                     <a>Track My Order</a>
                 </div>
-                <div className="col-md-3 d-flex flex-column">
+                <div className="col-xs-6 col-md-3 d-flex flex-column">
                     {/* <p>Our Office</p>
                     <a>About</a>
                     <a>Site Map</a>
@@ -65,12 +65,12 @@ const Footer = () => (
 
             <div className="horizontalLine"></div>
 
-            <div className="d-flex flex-row copyright">
-                <div class="bottomleft d-flex justify-content-start">
+            <div className="row copyright">
+                <div class="col-xs-12 col-md-6 bottomleft d-flex order-xs-1 justify-content-sm-center justify-content-md-start">
                     <p>Copyright Ⓒ buy&SellPortal. All rights reserved</p>
                 </div>
 
-                <div class="bottomright d-flex justify-content-end">
+                <div class="col-xs-12 col-md-6 bottomright d-flex order-xs-0 justify-content-sm-center justify-content-md-end">
                     <img src={require('../assets/images/visa.png')} className="payment-cards" />
                     <img src={require('../assets/images/mastercard.png')} className="payment-cards" />
                     <img src={require('../assets/images/paypal.png')} className="payment-cards" />
