@@ -25,6 +25,18 @@ import FormControl from 'react-bootstrap/FormControl'
 
 // import Slider from "react-slick";
 
+const cardData = [
+  { id: 1, name: 'Shirt 1' },
+  { id: 2, name: 'Shirt 1' },
+  { id: 3, name: 'Shirt 1' },
+  { id: 4, name: 'Shirt 1' },
+  { id: 5, name: 'Shirt 1' },
+  { id: 1, name: 'Shirt 1' },
+  { id: 2, name: 'Shirt 1' },
+  { id: 3, name: 'Shirt 1' },
+  { id: 4, name: 'Shirt 1' },
+  { id: 5, name: 'Shirt 1' },
+]
 class Home extends Component {
   render() {
     const settings = {
@@ -76,33 +88,11 @@ class Home extends Component {
           </div>
 
           <div className="row products-list">
-            <div className="col-xs-6 col-md-3">
+            {cardData.map(card=>
+              <div className="col-xs-6 col-md-3">
               <CustomCard />
             </div>
-            <div className="col-xs-6 col-md-3">
-              <CustomCard />
-            </div>
-            <div className="col-xs-6 col-md-3">
-              <CustomCard />
-            </div>
-            <div className="col-xs-6 col-md-3">
-              <CustomCard />
-            </div>
-          </div>
-
-          <div className="row products-list">
-            <div className="col-xs-6 col-md-3">
-              <CustomCard />
-            </div>
-            <div className="col-xs-6 col-md-3">
-              <CustomCard />
-            </div>
-            <div className="col-xs-6 col-md-3">
-              <CustomCard />
-            </div>
-            <div className="col-xs-6 col-md-3">
-              <CustomCard />
-            </div>
+            )}
           </div>
         </div>
 

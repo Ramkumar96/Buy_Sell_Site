@@ -8,10 +8,11 @@ import CustomCard from '../components/CustomCard';
 import { Icon, InlineIcon } from '@iconify/react';
 import heartOutlined from '@iconify/icons-ant-design/heart-outlined';
 import starFilled from '@iconify/icons-ant-design/star-filled';
-
+import { useHistory } from "react-router-dom"
 import Carousel from 'react-bootstrap/Carousel';
 
 const ProductViewPage = () => {
+    const history = useHistory();
     return (
         <div className="container">
             <div className="row ">
@@ -88,7 +89,7 @@ const ProductViewPage = () => {
                             </div>
 
                             <div>
-                            <button className="product-button">Buy Now</button>
+                            <button className="product-button" onClick={()=>history.push('/checkout')}>Buy Now</button>
                             </div>
                             <div>
                             <button className="product-button-outine ">Add to Cart</button>

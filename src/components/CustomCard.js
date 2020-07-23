@@ -34,7 +34,7 @@ class CustomCard extends Component {
                                 <li></li>
                                 <li></li>
                             </ul> */}
-                            <a className="add-to-cart" href="#">Add to cart</a>
+                            <a className="add-to-cart" href="product">Add to cart</a>
                         </div>
                     </div>
                 {/* </div> */}
