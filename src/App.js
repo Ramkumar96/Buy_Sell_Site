@@ -13,6 +13,7 @@ import CheckOutPage from './pages/CheckOutPage';
 const App = () => {
   return (
     <>
+
       <Router>
         <Header />
 
@@ -26,9 +27,9 @@ const App = () => {
 
         <Footer />
       </Router>
+
     </>
   )
 }
-
 
 export default App;
