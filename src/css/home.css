@@ -302,6 +302,9 @@
     .sliderImage h1{
         position: absolute;
         left: 15%;
+        margin-top: 2.5em;
+        /* vertical-align: middle; */
+        color: var(--primary-color);
     }
     .sliderImage p{
         font-size: 35px;
