@@ -53,8 +53,8 @@ class Home extends Component {
         {/* <div className="homeSlider"> */}
         {/* <Slider {...settings}> */}
         <div className="sliderImage">
-          <h1>Dive right in</h1>
-          <p>Limited collection</p>
+          <h1>Browse today's top Trending products</h1>
+          {/* <p>Limited collection</p> */}
           <div className="bannersideimg">
             <img src={require('../assets/images/bannersideimg.png')} />
           </div>
