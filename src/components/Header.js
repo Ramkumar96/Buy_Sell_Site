@@ -116,7 +116,10 @@ const Header = () => {
                     <a href="">
                         <Icon icon={heartOutlined} style={{ color: '#3d3d3d', fontSize: '31px', marginRight: '1em', marginTop: '0.5em' }} />
                     </a>
-                    <button className="button-header">Start Selling</button>
+                    <Link to="/add-product">
+                        <button className="button-header">Start Selling</button>
+                    </Link>
+
                 </div>
             </div>
 

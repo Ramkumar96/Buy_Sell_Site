@@ -13,7 +13,7 @@ class LoginPage extends Component {
             <form>
                 <div className="row">
                     <div className="col-md-6 leftBanner">
-                        <img src={require('../assets/images/c1.jpg')} />
+                        <img src={require('../assets/images/ecommerce.png')} />
                     </div>
                     <div className="col-md-6 d-flex flex-column signInContainer">
                         <h3 className="text-center">Welcome Back !</h3>
