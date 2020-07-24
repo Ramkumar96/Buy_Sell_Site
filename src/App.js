@@ -12,6 +12,7 @@ import CheckOutPage from './pages/CheckOutPage';
 import AddProductPage from './pages/AddProductPage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import CategoryPage from './pages/CategoryPage';
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
           <Route path='/signup' exact component={SignupPage} />
           <Route path='/product' exact component={ProductViewPage} />
           <Route path='/checkout' exact component={CheckOutPage} />
+          <Route path='/category' exact component={CategoryPage} />
           <Route path='/add-product' exact component={AddProductPage} />
           <Home />
         </Switch>

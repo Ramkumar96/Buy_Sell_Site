@@ -94,6 +94,14 @@ class Home extends Component {
             </div>
             )}
           </div>
+
+          <div className="row products-list">
+            {cardData.map(card=>
+              <div className="col-xs-6 col-md-3">
+              <CustomCard />
+            </div>
+            )}
+          </div>
         </div>
 
         {/* <div className="row product-container">
