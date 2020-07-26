@@ -4,15 +4,27 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import InputGroup from 'react-bootstrap/InputGroup';
 
 import CategoriesCard from './CategoriesCard';
-import '../../css/TopCategories.css';
-import CustomCard from '../Components/CustomCard';
+import '../css/TopCategories.css';
 import Brands from './Brands';
+import CustomCard from './CustomCard';
 
+const cardData = [
+    { id: 1, name: 'Shirt 1' },
+    { id: 2, name: 'Shirt 1' },
+    { id: 3, name: 'Shirt 1' },
+    { id: 4, name: 'Shirt 1' },
+    { id: 5, name: 'Shirt 1' },
+    { id: 1, name: 'Shirt 1' },
+    { id: 2, name: 'Shirt 1' },
+    { id: 3, name: 'Shirt 1' },
+    { id: 4, name: 'Shirt 1' },
+    { id: 5, name: 'Shirt 1' },
+]
 
 class TopCategories extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            <div className="containerCategory">
 
                 <div className="row filterCategories">
                     <div className="col">
@@ -25,21 +37,21 @@ class TopCategories extends Component {
                             </div>
                             <div>
                                 <span>
-                                <DropdownButton
-                                    as={InputGroup.Prepend}
-                                    // variant="outline-secondary"
-                                    title="Shoes"
-                                    id="input-group-dropdown-1"
-                                    className="drop"
-                                >
-                                    <Dropdown.Item href="#">Action</Dropdown.Item>
-                                    <Dropdown.Item href="#">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="#">Something else here</Dropdown.Item>
-                                    <Dropdown.Divider />
-                                    <Dropdown.Item href="#">Separated link</Dropdown.Item>
-                                </DropdownButton>
+                                    <DropdownButton
+                                        as={InputGroup.Prepend}
+                                        // variant="outline-secondary"
+                                        title="Shoes"
+                                        id="input-group-dropdown-1"
+                                        className="drop"
+                                    >
+                                        <Dropdown.Item href="#">Action</Dropdown.Item>
+                                        <Dropdown.Item href="#">Another action</Dropdown.Item>
+                                        <Dropdown.Item href="#">Something else here</Dropdown.Item>
+                                        <Dropdown.Divider />
+                                        <Dropdown.Item href="#">Separated link</Dropdown.Item>
+                                    </DropdownButton>
                                 </span>
-                                
+
                             </div>
 
                         </div>
@@ -68,10 +80,18 @@ class TopCategories extends Component {
                             <p>New Arrivals</p>
                         </div>
                         <div className="row newArrivalsCard">
-                            <CustomCard />
-                            <CustomCard />
-                            <CustomCard />
-                            <CustomCard />
+                            <div className="col-xs-6 col-md-3">
+                                <CustomCard />
+                            </div>
+                            <div className="col-xs-6 col-md-3">
+                                <CustomCard />
+                            </div>
+                            <div className="col-xs-6 col-md-3">
+                                <CustomCard />
+                            </div>
+                            <div className="col-xs-6 col-md-3">
+                                <CustomCard />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,10 +119,18 @@ class TopCategories extends Component {
                             <p>Best Sellers</p>
                         </div>
                         <div className="row newArrivalsCard">
-                            <CustomCard />
-                            <CustomCard />
-                            <CustomCard />
-                            <CustomCard />
+                            <div className="col-xs-6 col-md-3">
+                                <CustomCard />
+                            </div>
+                            <div className="col-xs-6 col-md-3">
+                                <CustomCard />
+                            </div>
+                            <div className="col-xs-6 col-md-3">
+                                <CustomCard />
+                            </div>
+                            <div className="col-xs-6 col-md-3">
+                                <CustomCard />
+                            </div>
                         </div>
                     </div>
                 </div>

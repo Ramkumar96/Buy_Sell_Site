@@ -244,6 +244,9 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    .products-section{
+        margin-bottom: 5em;
+    }
     .sortby-feature{
         position: absolute;
         right: 13.5em;
@@ -299,6 +302,9 @@
     .sliderImage h1{
         position: absolute;
         left: 15%;
+        margin-top: 2.5em;
+        /* vertical-align: middle; */
+        color: var(--primary-color);
     }
     .sliderImage p{
         font-size: 35px;

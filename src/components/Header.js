@@ -56,6 +56,7 @@ const Header = () => {
 
                             {/* <NavDropdown.Item href="#action/3.2">Sign in</NavDropdown.Item> */}
                             <NavDropdown.Item>View Profile</NavDropdown.Item>
+                            <NavDropdown.Item>Log out</NavDropdown.Item>
                         </NavDropdown>
                         {/* <p>My Account</p> */}
                         {/* </span> */}
@@ -115,11 +116,14 @@ const Header = () => {
                     <a href="">
                         <Icon icon={heartOutlined} style={{ color: '#3d3d3d', fontSize: '31px', marginRight: '1em', marginTop: '0.5em' }} />
                     </a>
-                    <button className="button-header">Start Selling</button>
+                    <Link to="/add-product">
+                        <button className="button-header">Start Selling</button>
+                    </Link>
+
                 </div>
             </div>
 
-            <dic className="categories-section">
+            <div className="categories-section">
                 <Navbar collapseOnSelect expand="lg">
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="links" >
@@ -135,7 +139,7 @@ const Header = () => {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-            </dic>
+            </div>
 
         </>
     )
