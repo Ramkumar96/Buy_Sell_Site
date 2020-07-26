@@ -249,6 +249,9 @@ Nav.Link {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+  .input-container{
+    margin-left: 3em;
+  }
   .header-top-right-mobile{
     display: none;
   }
@@ -256,10 +259,11 @@ Nav.Link {
     /* padding-left: 30px; */
     display: flex;
     justify-content: end;
-    padding-right: 1em;
+    margin-right: -10em;
+    /* padding-right: 1em; */
   }
   #input-group-dropdown-1{
-    padding-left: 1em;
+    margin-left: -5em;
   }
   .drop{
     padding-left: 2em;
@@ -268,14 +272,14 @@ Nav.Link {
     border-left: 1.5px solid rgb(61, 61, 61);
     height: 32px;
     /* position: absolute; */
-    left: 30%;
+    /* left: 30%; */
     top: 21px;
-    margin-left: -2em;
+    margin-left: -4em;
     z-index: 1;
   }
   .searchTxt{
     position: absolute;
-    margin-left: 1em;
+    /* margin-left: 1em; */
     margin-right: -6em;
   }
   .searchIcon{
