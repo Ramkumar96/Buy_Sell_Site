@@ -9,6 +9,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   overflow: hidden;
+  
 }
 
 
@@ -111,7 +112,6 @@ ul li {
   font-size: '20px';
 }
 
-
 @media (min-width: 992px) { 
   .product {
     position: absolute;
@@ -119,9 +119,8 @@ ul li {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 240px;
-    height: 350px;
-    background: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    height: 280px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     overflow: hidden;
   }
@@ -140,7 +139,7 @@ ul li {
   .details {
     position: absolute;
     width: 100%;
-    bottom: 5px;
+    bottom: -50px;
     background: #fff;
     padding: 10px;
     box-sizing: border-box;

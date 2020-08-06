@@ -19,7 +19,7 @@ class CustomCard extends Component {
                             <div className="price"> $55.99</div>
                             {/* <label>Rating</label> */}
                             <p className="ratings">
-                                <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} className="rating-star" />
+                                <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }}/>
                                 <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
                                 <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
                                 <Icon icon={starFilled} style={{ color: '#fdcc0d', fontSize: '22px' }} />
