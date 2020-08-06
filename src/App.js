@@ -35,15 +35,15 @@ class App extends Component {
 
   return (
     <>
-      <Router>
+      <Route
+        <Header />
       <div>
-        
         {this.state.showHeader && <Header/>}
-
         <Switch>
-          <Route path='/' exact component={Home} />
           <Route path='/login' exact component={LoginPage} />
           <Route path='/signup' exact component={SignupPage} />
+          <Route path='/' exact component={Home} />
+          <Route path='/login' exact component={LoginPage} />
           <Route path='/product' exact component={ProductViewPage} />
           <Route path='/category' exact component={CategoryPage} />
           <Route path='/add-product' exact component={AddProductPage} />
