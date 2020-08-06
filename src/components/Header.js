@@ -65,7 +65,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className="row logo-row">
+            <div className="row logo-row d-flex justify-content-between">
                 <div className="header-top-left-mobile col-xs-12">
                     <div className="hamburger-menu"></div>
                     <div className="col-md-3">
@@ -81,8 +81,8 @@ const Header = () => {
 
                 <div className="col-xs-12 col-md-5 input-container">
                     <form>
-                        <InputGroup className="mb-3 justify-content-center input-box">
-                            <Icon icon={folderOpenOutlined} style={{ color: '#3d3d3d', fontSize: '30px', marginTop: '2px' }} />
+                        <InputGroup className="mb-3 input-box">
+                            {/* <Icon icon={folderOpenOutlined} style={{ color: '#3d3d3d', fontSize: '30px',  }} /> */}
                             <DropdownButton
                                 as={InputGroup.Prepend}
                                 // variant="outline-secondary"
@@ -100,10 +100,10 @@ const Header = () => {
                                 <Dropdown.Item href="#">Electronics</Dropdown.Item>
                             </DropdownButton>
                             <div className="vl"></div>
-                            <FormControl aria-describedby="basic-addon1" placeholder="Search your items here..." style={{ border: 'none' }} className="searchTxt" />
-                            <span className="d-flex justify-content-end ">
+                            <FormControl aria-describedby="basic-addon1" placeholder="Search your items" style={{ border: 'none' }} className="searchTxt" />
+                            {/* <span className="d-flex justify-content-end ">
                                 <Icon icon={bxSearch} className="d-flex justify-content-end searchIcon" style={{ color: '#3d3d3d', fontSize: '25px', marginTop: '6px', }} />
-                            </span>
+                            </span> */}
 
                         </InputGroup>
                     </form>

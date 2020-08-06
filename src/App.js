@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 // import HomePage from './pages/HomePage';
 // import TopCategories from  './components/CategoriesComponents/TopCategories';
@@ -15,31 +15,53 @@ import SignupPage from './pages/SignupPage';
 import CategoryPage from './pages/CategoryPage';
 
 
-const App = () => {
+class App extends Component {
+
+  constructor (props) {
+    super(props)
+    this.state = {
+      showHeader: true
+    }
+  }
+
+  hideNavigation = () => {
+    this.setState({
+      showHeader: false
+    })
+  }
+
+
+  render(){
+
   return (
     <>
-
-      <Router>
+      <Route
         <Header />
+      <div>
+        {this.state.showHeader && <Header/>}
         <Switch>
           <Route path='/login' exact component={LoginPage} />
           <Route path='/signup' exact component={SignupPage} />
           <Route path='/' exact component={Home} />
           <Route path='/login' exact component={LoginPage} />
           <Route path='/product' exact component={ProductViewPage} />
-          <Route path='/checkout' exact component={CheckOutPage} />
           <Route path='/category' exact component={CategoryPage} />
           <Route path='/add-product' exact component={AddProductPage} />
+          <Route render={(props) => (
+            <CheckOutPage
+            hideNavigation={this.hideNavigation}  
+            path='/checkout'/>
+          )}
+          />
           <Home />
         </Switch>
-
-
-        
         <Footer />
+      </div>
       </Router>
 
     </>
   )
+}
 }
 
 export default App;
