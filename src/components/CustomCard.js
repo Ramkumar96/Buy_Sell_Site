@@ -5,12 +5,32 @@ import starFilled from '@iconify/icons-ant-design/star-filled';
 import Card from 'react-bootstrap/Card';
 import '../css/CustomCard.css';
 
+
+
+import { Redirect } from 'react-router';
+
 class CustomCard extends Component {
+
+    state = {
+        redirect: false
+    }
+    redirectHandler = () => {
+        this.setState({ redirect: true })
+        this.renderRedirect();
+    }
+    renderRedirect = () => {
+        if (this.state.redirect) {
+            return <Redirect to='/product' />
+        }
+    }
+
+
     render() {
         return (
             <div>
                 {/* <div className="body"> */}
-                    <div className="product">
+                    <div className="product"  onClick={this.redirectHandler}>
+                    {this.renderRedirect()}
                         <div className="imgbox">
                             <img src={require('../assets/images/cardImage.png')} />
                         </div>
