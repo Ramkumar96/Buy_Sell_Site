@@ -17,7 +17,7 @@ import CategoryPage from './pages/CategoryPage';
 
 class App extends Component {
 
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       showHeader: true
@@ -31,37 +31,36 @@ class App extends Component {
   }
 
 
-  render(){
+  render() {
 
-  return (
-    <>
-      <Route
-        <Header />
-      <div>
-        {this.state.showHeader && <Header/>}
-        <Switch>
-          <Route path='/login' exact component={LoginPage} />
-          <Route path='/signup' exact component={SignupPage} />
-          <Route path='/' exact component={Home} />
-          <Route path='/login' exact component={LoginPage} />
-          <Route path='/product' exact component={ProductViewPage} />
-          <Route path='/category' exact component={CategoryPage} />
-          <Route path='/add-product' exact component={AddProductPage} />
-          <Route render={(props) => (
-            <CheckOutPage
-            hideNavigation={this.hideNavigation}  
-            path='/checkout'/>
-          )}
-          />
-          <Home />
-        </Switch>
-        <Footer />
-      </div>
-      </Router>
+    return (
+      <>
+        <Router>
+          <div>
+            {this.state.showHeader && <Header />}
+            <Switch>
+              <Route path='/login' exact component={LoginPage} />
+              <Route path='/signup' exact component={SignupPage} />
+              <Route path='/' exact component={Home} />
+              <Route path='/login' exact component={LoginPage} />
+              <Route path='/product' exact component={ProductViewPage} />
+              <Route path='/category' exact component={CategoryPage} />
+              <Route path='/add-product' exact component={AddProductPage} />
+              <Route render={(props) => (
+                <CheckOutPage
+                  hideNavigation={this.hideNavigation}
+                  path='/checkout' />
+              )}
+              />
+              <Home />
+            </Switch>
+            <Footer />
+          </div>
+        </Router>
 
-    </>
-  )
-}
+      </>
+    )
+  }
 }
 
 export default App;
