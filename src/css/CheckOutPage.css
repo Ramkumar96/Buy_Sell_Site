@@ -1,9 +1,64 @@
+.checkoutPageStepsContainer{
+    margin: 20px 150px;
+    /* background-color: cornflowerblue; */
+}
 .checkoutPageContainer{
-    margin: 20px 120px;
+  margin: 20px 80px;
+  /* background-color: cornflowerblue; */
+}
+.checkout-steps{
+  /* background-color: aqua; */
+  padding: 30px;
+  align-content: center;
+  /* box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25); */
 }
 
+.icon{
+  font-size: 24px;
+}
+
+
+
+
+/* Table */
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th{
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background-color: #ed5142;
+}
+
+td{
+  padding: 10px 5px;
+}
+
+.form-control{
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .collapsible {
-    background-color:#E8E8E83;
+    background-color:#E8E8E8;
     border-radius: 5px;
     color:black;
     cursor: pointer;
@@ -21,14 +76,13 @@
     /* background-color: 	#C0C0C0; */
     outline: none;
   }
-  
+/* 
   .content {
-    /* padding: 0 18px; */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #ffffff;
-  }
+  }  */
 
   .collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -50,7 +104,7 @@
     padding: 10px 20px 10px 20px;
     border: 1px solid lightgrey;
     border-radius: 5px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
 
 

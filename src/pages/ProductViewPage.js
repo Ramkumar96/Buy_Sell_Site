@@ -28,20 +28,13 @@ const ProductViewPage = () => {
                     <div className="row row-2">
                         <div className="col-75">
                             <Carousel className="img-carousel">
-                                <Carousel.Item>
+                                {/* <Carousel.Item>
                                     <img
                                         className="img-fill"
                                         src={require('../assets/images/c1.jpg')}
                                         alt="First slide"
                                     />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="img-fill"
-                                        src={require('../assets/images/c2.jpg')}
-                                        alt="Third slide"
-                                    />
-                                </Carousel.Item>
+                                </Carousel.Item> */}
                                 <Carousel.Item>
                                     <img
                                         className="img-fill"
@@ -120,19 +113,27 @@ const ProductViewPage = () => {
 
                         </DropdownButton>
                     </div>
-                    <div className="row row-4">
-                        <div className="col">
-                            <div className="row newArrivalsTitle ">
-                                <p>Best Sellers</p>
+                    <div className="row newArrivals">
+                    <div className="col">
+                        <div className="row newArrivalsTitle ">
+                            <p>New Arrivals</p>
+                        </div>
+                        <div className="row newArrivalsCard">
+                            <div className="col-xs-6 col-md-3">
+                                <CustomCard />
                             </div>
-                            <div className="row newArrivalsCard">
+                            <div className="col-xs-6 col-md-3">
                                 <CustomCard />
+                            </div>
+                            <div className="col-xs-6 col-md-3">
                                 <CustomCard />
-                                <CustomCard />
+                            </div>
+                            <div className="col-xs-6 col-md-3">
                                 <CustomCard />
                             </div>
                         </div>
                     </div>
+                </div>
 
                 </div>
             </div>

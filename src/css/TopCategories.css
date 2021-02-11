@@ -44,11 +44,15 @@
     font-weight: bold;
 }
 .newArrivalsCard{
+    overflow: hidden;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .brands{
+    margin-top: 100px;
     height: 300px;
     padding-left: 100px;
     padding-right: 100px;
@@ -65,4 +69,8 @@
     flex-direction: row;
     justify-content: space-between;
 
+}
+
+.containerCategory{
+    margin-bottom: 100px;
 }

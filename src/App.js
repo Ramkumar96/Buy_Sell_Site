@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 // import HomePage from './pages/HomePage';
 // import TopCategories from  './components/CategoriesComponents/TopCategories';
@@ -12,31 +12,55 @@ import CheckOutPage from './pages/CheckOutPage';
 import AddProductPage from './pages/AddProductPage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import CategoryPage from './pages/CategoryPage';
 
 
-const App = () => {
-  return (
-    <>
+class App extends Component {
 
-      <Router>
-        <Header />
+  constructor(props) {
+    super(props)
+    this.state = {
+      showHeader: true
+    }
+  }
 
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/login' exact component={LoginPage} />
-          <Route path='/signup' exact component={SignupPage} />
-          <Route path='/product' exact component={ProductViewPage} />
-          <Route path='/checkout' exact component={CheckOutPage} />
-          <Route path='/add-product' exact component={AddProductPage} />
-          <Home />
-        </Switch>
+  hideNavigation = () => {
+    this.setState({
+      showHeader: false
+    })
+  }
 
 
-        <Footer />
-      </Router>
+  render() {
 
-    </>
-  )
+    return (
+      <>
+        <Router>
+          <div>
+            {this.state.showHeader && <Header />}
+            <Switch>
+              <Route path='/login' exact component={LoginPage} />
+              <Route path='/signup' exact component={SignupPage} />
+              <Route path='/' exact component={Home} />
+              <Route path='/login' exact component={LoginPage} />
+              <Route path='/product' exact component={ProductViewPage} />
+              <Route path='/category' exact component={CategoryPage} />
+              <Route path='/add-product' exact component={AddProductPage} />
+              <Route render={(props) => (
+                <CheckOutPage
+                  hideNavigation={this.hideNavigation}
+                  path='/checkout' />
+              )}
+              />
+              <Home />
+            </Switch>
+            <Footer />
+          </div>
+        </Router>
+
+      </>
+    )
+  }
 }
 
 export default App;
